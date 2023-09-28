@@ -35,17 +35,17 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- vue -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.cjs.js"
-    integrity="sha512-Om0T2d9tl4H2ShSsEkWjJeQOlXGJg4OZvXKZw075refp2RNZ1avQDbqd6WhwGbWhqpcn2oPmExCEa/lSLzZaJw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- carousel -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
   <!-- style -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div id="app">
+  <div>
     <!-- ======= Mobile nav toggle button ======= -->
 
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
@@ -91,29 +91,20 @@
       <!-- ======= About Section ======= -->
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
-
           <div class="section-title">
             <h2>Me in 60 seconds</h2>
-            <p>Addicted to travel, out of confort, Aiming to make an impact.</p>
+            <p>Addicted to travel, out of comfort, Aiming to make an impact.</p>
           </div>
-
           <div class="row">
             <div class="col-lg-4">
-              <button id="startCarousel">Play</button>
-              <div class="owl-carousel owl-theme">
-                <div class="item">
-                  <div class="image-container">
-                    <img src="assets/img/bg-jeremy-PhotoRoom.png" class="img-fluid" alt="Image 1">
-                    <div class="image-text animate__animated animate__fadeInUp">Caption for Image 1</div>
-                  </div>
+              <button id="playButton">Play</button>
+              <div class="carousel-container">
+                <div id="imageCarousel">
+                  <!-- Inserisci le tue immagini qui -->
+                  <div><img src="image1.jpg" alt="Image 1"></div>
+                  <div><img src="image2.jpg" alt="Image 2"></div>
+                  <div><img src="image3.jpg" alt="Image 3"></div>
                 </div>
-                <div class="item">
-                  <div class="image-container">
-                    <img src="assets/img/bg-jeremy-PhotoRoom.png" class="img-fluid" alt="Image 2">
-                    <div class="image-text animate__animated animate__fadeInUp">Caption for Image 2</div>
-                  </div>
-                </div>
-                <!-- Aggiungi altre immagini al carosello come necessario -->
               </div>
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content">
@@ -121,8 +112,7 @@
                 <h3>Software Developer.</h3>
                 <p class="fst-italic">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore
-                  magna aliqua.
+                  dolore magna aliqua.
                 </p>
               </div>
               <div class="personal-info">
@@ -157,8 +147,8 @@
                 </p>
               </div>
             </div>
-
           </div>
+        </div>
       </section>
 
       <!-- ======= Facts Section ======= -->
@@ -805,11 +795,8 @@
                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
-
             </div>
-
           </div>
-
         </div>
       </section><!-- End Contact Section -->
 
@@ -849,11 +836,13 @@
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <!-- carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
   </div>
 </body>
 
