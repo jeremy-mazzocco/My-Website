@@ -25,6 +25,10 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -572,6 +576,11 @@ section {
   height: 10px;
   transition: 0.9s;
   background-color: #6f9c5c;
+}
+
+.skills-header {
+  font-size: 19px;
+  color: #6f9c5c;
 }
 
 /*--------------------------------------------------------------
