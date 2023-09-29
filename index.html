@@ -35,17 +35,14 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- carousel -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
   <!-- style -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <div>
+  <div id="app">
     <!-- ======= Mobile nav toggle button ======= -->
 
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
@@ -85,71 +82,108 @@
       </div>
     </section><!-- End Hero -->
 
-
     <main id="main">
 
-      <!-- ======= About Section ======= -->
+      <!-- ======= Me 30 Section ======= -->
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Me in 60 seconds</h2>
+            <h2>Me in 30 seconds</h2>
             <p>Addicted to travel, out of comfort, Aiming to make an impact.</p>
           </div>
           <div class="row">
             <div class="col-lg-4">
-              <button id="playButton">Play</button>
-              <div class="carousel-container">
-                <div id="imageCarousel">
-                  <!-- Inserisci le tue immagini qui -->
-                  <div><img src="image1.jpg" alt="Image 1"></div>
-                  <div><img src="image2.jpg" alt="Image 2"></div>
-                  <div><img src="image3.jpg" alt="Image 3"></div>
+              <button id="playButton" class="btn btn-primary">Play</button>
+
+              <!-- Contenuto del carosello -->
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicatori -->
+                <ul class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ul>
+
+                <!-- Immagini del carosello -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="carousel-img" src="./assets/img/bg-jeremy-PhotoRoom.png" alt="Image 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="carousel-img" src="./assets/img/bg-jeremy-PhotoRoom.png" alt="Image 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="carousel-img" src="./assets/img/bg-jeremy-PhotoRoom.png" alt="Image 3">
+                  </div>
                 </div>
+
+                <!-- Controlli -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
               </div>
+
+
+
+
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content">
-              <div class="about-text">
-                <h3>Software Developer.</h3>
-                <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua.
-                </p>
-              </div>
+     
               <div class="personal-info">
                 <h3>Personal Information</h3>
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Born:</strong> <span>1989</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span>Italian<i class="fa-solid fa-pizza-slice" style="color: #d90000;"></i></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Language:</strong> <span>English, C2</span><span>Italian, Native</span><span>French, C1</span><span>Spanish, C1</span><span>Dutch, A1+</span></li>
                 </ul>
               </div>
               <div class="additional-info">
-                <h3>Additional Information</h3>
+                <h3>Education</h3>
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                 
+                  <li><i class="bi bi-chevron-right"></i> <strong>Diploma</strong> <span> in Chemistry 2003-2008</span></li>
+
+                  <li><i class="bi bi-chevron-right"></i> <strong>Expert</strong> <span> in Worlwide Backpacking 2012-2016</span></li>
+
+                  <li><i class="bi bi-chevron-right"></i> <strong>Certificate</strong> <span>in Web Development</span></li>
+                
                 </ul>
               </div>
               <div class="interests">
                 <h3>Interests and Hobbies</h3>
                 <p>
-                  Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis
-                  et ut.
-                  Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis
-                  quidem
-                  quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate.
-                  Ab et
-                  eum qui repellendus omnis culpa magni laudantium dolores.
+                  I like maintaining a balanced lifestyle with regular practice gym workouts, yoga and Krav Maga.
+                  I like to channel my creativity through drawing and dancing. 
+                  I find relax reading books, being in nature, hiking and traveling.
+                  
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <!-- ======= Facts Section ======= -->
       <section id="facts" class="facts">
@@ -795,8 +829,11 @@
                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
+
             </div>
+
           </div>
+
         </div>
       </section><!-- End Contact Section -->
 
@@ -825,6 +862,8 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
 
+
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -836,13 +875,12 @@
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
-    <!-- carousel -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-
   </div>
 </body>
 

@@ -259,3 +259,29 @@
 
   new PureCounter();
 })();
+
+
+
+const playButton = document.getElementById('playButton');
+let isPlaying = false;
+
+playButton.addEventListener('click', () => {
+  if (!isPlaying) {
+    isPlaying = true;
+    playButton.disabled = true;
+    const carousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
+      interval: 1000, // Cambia immagine ogni 1 secondo (1000 ms)
+    });
+
+    // Alla fine del carosello, riabilita il bottone "Play"
+    carousel._element.addEventListener('slid.bs.carousel', () => {
+      if (carousel._activeElement === carousel._items[carousel._items.length - 1]) {
+        isPlaying = false;
+        playButton.disabled = false;
+      }
+    });
+
+    // Avvia il carosello
+    // carousel.cycle();
+  }
+});
