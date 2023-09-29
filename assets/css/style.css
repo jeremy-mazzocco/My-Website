@@ -468,7 +468,6 @@ section {
 
 #myCarousel {
   height: 100%;
-
 }
 
 .carousel-inner {
@@ -497,30 +496,10 @@ section {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
-.facts .count-box {
+/* .facts .count-box {
   padding: 30px 30px 25px 30px;
   margin-top: 30px;
   width: 100%;
@@ -557,13 +536,13 @@ section {
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-}
+} */
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 60px;
+  height: 100%;
   display: block;
   background: none;
   border-radius: 0;
