@@ -406,10 +406,38 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.about-header {
+  text-align: center;
+  color: #6f9c5c;
+  margin-bottom: 1rem;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
   color: #6f9c5c;
+}
+
+
+#fa-bab {
+  font-size: 22px;
+  color: #4babd0;
+}
+
+.personal-info {
+  margin-top: 3rem;
+}
+
+.personal-info,
+.additional-info,
+.interests {
+  margin-bottom: 3rem;
+}
+
+.personal-info span,
+.additional-info span {
+  margin-right: 1rem;
 }
 
 .about .content ul {
@@ -452,8 +480,10 @@ section {
 }
 
 .fa-circle-play {
-  font-size: 34px;
+  font-size: 55px;
   cursor: pointer;
+  margin-top: 1rem;
+  margin-left: 2rem;
 }
 
 .fa-circle-play:active {
@@ -466,15 +496,7 @@ section {
   height: 100%;
 }
 
-.personal-info {
-  margin-top: 3rem;
-}
 
-.personal-info,
-.additional-info,
-.interests {
-  margin-bottom: 3rem;
-}
 
 
 
