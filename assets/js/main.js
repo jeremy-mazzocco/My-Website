@@ -262,7 +262,7 @@
 
 
 
-const playButton = document.getElementById('playButton');
+const playButton = document.getElementById('fa-circle-play');
 let isPlaying = false;
 
 playButton.addEventListener('click', () => {
