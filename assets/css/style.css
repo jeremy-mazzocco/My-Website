@@ -341,6 +341,10 @@ img {
   color: #6f9c5c;
 }
 
+.typed {
+  font-size: 30px;
+}
+
 @media (max-width: 992px) {
   #hero {
     text-align: center;
