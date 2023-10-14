@@ -274,7 +274,7 @@ playButton.addEventListener('click', () => {
     });
 
     // count down
-    let countdown = 20;
+    let countdown = 8;
     const countdownElement = document.getElementById('countdown');
     countdownElement.textContent = countdown;
 
