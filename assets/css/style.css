@@ -276,12 +276,14 @@ img {
 .background-container {
   width: 90%;
   height: 90%;
+  border-radius: 5px;
   background: url("../img/IMG_0966.JPG") no-repeat;
   opacity: 0.6;
   background-position-x: -200px;
   background-position-y: -100px;
   position: absolute;
   left: 5%;
+  bottom: 5%;
 
 
 }
@@ -445,17 +447,15 @@ section {
 }
 
 .section-title {
-  text-align: center;
-  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
   color: #45505b;
 }
 
@@ -563,8 +563,6 @@ section {
 .fa-circle-play {
   font-size: 55px;
   cursor: pointer;
-  margin-top: 1rem;
-  margin-left: 2rem;
 }
 
 .fa-circle-play:active {
